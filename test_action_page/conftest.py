@@ -7,6 +7,7 @@ import pytest
 @pytest.fixture
 def setup():
     options = Options()
+    options.add_argument("--headless")
     options.add_argument("--no-sandbox")
     options.add_argument("--start-maximize")
     options.add_argument("--disable-notification")
